@@ -341,6 +341,7 @@ template {
 *::after,
 *::before {
   box-sizing: border-box;
+  outline: solid red;
 }
 
 img {
@@ -361,3 +362,38 @@ a {
 }
 
 /* ESTILOS DEL FOOTER */
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+
+.first__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 0.25rem;
+}
+
+.second__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.radio__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
